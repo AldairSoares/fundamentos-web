@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
    <!-- Menu de navegação--> 
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a> 
         </li>
@@ -18,27 +19,52 @@
         <li></li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="center">Entre em contato comigo</h1>
     <!-- Formulário de contato-->
 
-    <form>
-        <label for="nome">Nome</label><br>
-        <input type="text" id="nome">
-        <br>
-        <label for="email">E-email</label><br>
-        <input type="email" id="email">
-        <br>
-        <label for="mensagem">Mensagem</label><br>
-        <textarea name="messagem" id="mensagem" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
-    <h2>Endereço</h2>
-    <p>Hospital Unimed Recife III</p>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.362804132869!2d-34.893886185653976!3d-8.064426394193504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ce373b8ff5%3A0x19ddc79d4a5de4aa!2sHospital%20Unimed%20Recife%20III!5e0!3m2!1sen!2sbr!4v1637692585198!5m2!1sen!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="container mb-50">
+        <div>
+            <form>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome">
+                <br>
+                <label for="email">E-email</label><br>
+                <input type="email" id="email">
+                <br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="messagem" id="mensagem" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
+        </div>
+        <div class="ml-50">
+            <h2>Endereço</h2>
+            <p>Hospital Unimed Recife III</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.362804132869!2d-34.893886185653976!3d-8.064426394193504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ce373b8ff5%3A0x19ddc79d4a5de4aa!2sHospital%20Unimed%20Recife%20III!5e0!3m2!1sen!2sbr!4v1637692585198!5m2!1sen!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img class="tm-social p-30" src="/assets/img/linkedin.png" alt="linkedin logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="tm-social p-30" src="/assets/img/instagram.png" alt="instagram logo">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="tm-social p-30" src="/assets/img/facebook.png" alt="facebook logo">
+            </a>
+        </div>
+        <p class="center">
+            AldaGames &copy - Todos os direitos reservados
+        </p>
+    </footer>
+  
 
 </body>
 </html>
