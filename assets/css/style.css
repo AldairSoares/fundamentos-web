@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* Hero Section */
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/img/vr-glasses.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span{
+    color:#f9004d;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.sobserv{
+    color: black;
+}
+
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: thin;
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.content h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+.content h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.content h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 5px;
+}
+
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    padding: 14px 30px 14px 15px;
+    border-radius: 5px;
+    background-color:#f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+
+
+/* Estilos da página sobre */
+.about-hero{
+    height: 100vh;
+    width: 100%;
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(193deg, rgba(0,0,0,1) 15%, rgba(189,8,38,1) 67%);
+}
+
+.about-video{
+    margin-top: 180px;
+    
+}
+
+.about-text{
+    margin-top: 200px;
+    width: 550px;
+    padding-left: 100px;
+}
+
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform:capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: white; 
+}
+
+.about-text p{
+    color: #DCDCDC;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilos da página Contato */
+
+.form{
+    width: 800px;
+    margin-top: 55px;
+    padding-right: 100px;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.form h2{
+    margin-bottom: 5px;
+}
+.campos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .campos input, text {
+    padding: 6px;
+    font-size: 25px;
+  }
+
+
+  .mapa{
+    width: 800px;
+    margin-top: 170px;
+    padding-right: 100px;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+.mapa h2{
+    margin-bottom: 5px;
+}
+
+.mapa p{
+    padding-bottom: 5px;
+}
+
+/* Estilos da página Sobre */
+
+.service .title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.service .box{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 20%;
+    min-height: 400px;
+}
+
+.service .box .card{
+    height: 350px;
+    width: 390px;
+    padding: 20px 35px;
+    background: #A52A2A;
+    border-radius: 20px;
+    margin: 15px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform .4s;
+}
+.service .box .card:hover{
+    transform: scale(1.1);
+}
+
+.service .box .card i{
+    font-size:  50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#191919;
+}
+
+.service .box .card h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.service .box .card .pra p{
+    color: #F8F8FF;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.service .box .card .pra .button{
+    background-color: #CD5C5C;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: thin;
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.service .box .card .pra .button:hover{
+    background-color: #000;
+
+}
