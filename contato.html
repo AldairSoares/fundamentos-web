@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-   <!-- Menu de navegação--> 
-    <ul id="menu">
-        <li>
-            <a href="index.html">Home</a> 
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-        <li></li>
-    </ul>
+    <div class="about-hero">
+        <nav>
+            <a href="index.html">
+                <h2 class="logo">Alda<span>Games</span></h2>
+            </a>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/contato.html">Contato</a>
+                </li>
+                <li>
+                    <a href="/about.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Serviços</a>
+                </li>
+            </ul>
+            <a href="#" class="btn">Inscreva-se</a>
+        </nav>
 
-    <h1 class="center">Entre em contato comigo</h1>
-    <!-- Formulário de contato-->
+        <!-- Formulário de contato-->
 
-    <div class="container mb-50">
-        <div>
-            <form>
-                <label for="nome">Nome</label><br>
-                <input type="text" id="nome">
-                <br>
-                <label for="email">E-email</label><br>
-                <input type="email" id="email">
-                <br>
-                <label for="mensagem">Mensagem</label><br>
-                <textarea name="messagem" id="mensagem" cols="30" rows="10"></textarea>
-                <br>
-                <br>
-                <button>Enviar</button>
-            </form>
-        </div>
-        <div class="ml-50">
-            <h2>Endereço</h2>
-            <p>Hospital Unimed Recife III</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.362804132869!2d-34.893886185653976!3d-8.064426394193504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ce373b8ff5%3A0x19ddc79d4a5de4aa!2sHospital%20Unimed%20Recife%20III!5e0!3m2!1sen!2sbr!4v1637692585198!5m2!1sen!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="main">
+            <div class="form">
+                <form>
+                    <h2>Formulário de Contato</h2>
+                    <div class="campos">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome">
+                    </div>
+                    <div class="campos">
+                        <label for="email2">E-email</label>
+                        <input type="email2" id="email2">
+                    </div>
+                    <div class="campos">
+                        <label class="form-children" for="mensagem">Mensagem</label>
+                        <textarea name="messagem" id="mensagem" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
+            <div class="mapa">
+                <h2>Endereço</h2>
+                <p>Hospital Unimed Recife III</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.362804132869!2d-34.893886185653976!3d-8.064426394193504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ce373b8ff5%3A0x19ddc79d4a5de4aa!2sHospital%20Unimed%20Recife%20III!5e0!3m2!1sen!2sbr!4v1637692585198!5m2!1sen!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </div>
-
-    <hr>
-    <footer>
-        <div class="container">
-            <a href="https://www.linkedin.com/" target="_blank">
-                <img class="tm-social p-30" src="/assets/img/linkedin.png" alt="linkedin logo">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img class="tm-social p-30" src="/assets/img/instagram.png" alt="instagram logo">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img class="tm-social p-30" src="/assets/img/facebook.png" alt="facebook logo">
-            </a>
-        </div>
-        <p class="center">
-            AldaGames &copy - Todos os direitos reservados
-        </p>
-    </footer>
-  
-
 </body>
+
 </html>
