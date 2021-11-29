@@ -39,7 +39,7 @@
             <a href="#" class="btn">Inscreva-se</a>
         </nav>
 
-        <!-- Formulário de contato-->
+        <!-- Formulário de contato com js-->
 
         <div class="main">
             <div class="form">
@@ -47,17 +47,20 @@
                     <h2>Formulário de Contato</h2>
                     <div class="campos">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome">
+                        <input type="text" id="nome" onkeyup='validaNome()'>
+                        <div id='txtNome'></div>
                     </div>
                     <div class="campos">
                         <label for="email2">E-email</label>
-                        <input type="email2" id="email2">
+                        <input type="email2" id="email2" onkeyup='validaEmail()'>
+                        <div id='txtEmail'></div>
                     </div>
                     <div class="campos">
-                        <label class="form-children" for="mensagem">Mensagem</label>
-                        <textarea name="messagem" id="mensagem" cols="30" rows="10"></textarea>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="messagem" id="mensagem" cols="30" rows="10" onkeyup='validaAssunto()'></textarea>
+                        <div id='txtAssunto'></div>
                     </div>
-                    <button class="btn">Enviar</button>
+                    <button class="btn" onclick="enviar()">Enviar</button>
                 </form>
             </div>
             <div class="mapa">
@@ -69,6 +72,7 @@
             </div>
         </div>
     </div>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
