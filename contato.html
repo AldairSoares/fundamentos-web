@@ -33,7 +33,7 @@
                     <a href="/about.html">Sobre</a>
                 </li>
                 <li>
-                    <a href="#">Serviços</a>
+                    <a href="/services.html">Serviços</a>
                 </li>
             </ul>
             <a href="#" class="btn">Inscreva-se</a>
@@ -51,13 +51,13 @@
                         <div id='txtNome'></div>
                     </div>
                     <div class="campos">
-                        <label for="email2">E-email</label>
+                        <label for="email2">E-mail</label>
                         <input type="email2" id="email2" onkeyup='validaEmail()'>
                         <div id='txtEmail'></div>
                     </div>
                     <div class="campos">
                         <label for="mensagem">Mensagem</label>
-                        <textarea name="messagem" id="mensagem" cols="30" rows="10" onkeyup='validaAssunto()'></textarea>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
                         <div id='txtAssunto'></div>
                     </div>
                     <button class="btn" onclick="enviar()">Enviar</button>
@@ -68,7 +68,7 @@
                 <p>AldaGames Zona Norte</p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.362804132869!2d-34.893886185653976!3d-8.064426394193504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ce373b8ff5%3A0x19ddc79d4a5de4aa!2sHospital%20Unimed%20Recife%20III!5e0!3m2!1sen!2sbr!4v1637692585198!5m2!1sen!2sbr"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
             </div>
         </div>
     </div>
