@@ -8,8 +8,8 @@ por Seletor: querySelector()
 */
 
 let nome = window.document.getElementById('nome')
-let email = document.querySelector('#email')
-let assunto = document.querySelector('#assunto')
+let email = document.querySelector('#email2')
+let assunto = document.querySelector('#mensagem')
 let nomeOk = false
 let emailOk = false
 let assuntoOk = false
@@ -23,7 +23,7 @@ function validaNome() {
    let txtNome = document.querySelector('#txtNome')
    if (nome.value.length < 3) {
       txtNome.innerHTML = 'Nome Inválido'
-      txtNome.style.color = 'red' 
+      txtNome.style.color = 'yellow' 
    } else {
       txtNome.innerHTML = 'Nome Válido'
       txtNome.style.color = 'green'
@@ -37,7 +37,7 @@ function validaEmail() {
 
    if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 ) {
       txtEmail.innerHTML = 'E-mail inválido'
-      txtEmail.style.color = 'red'
+      txtEmail.style.color = 'yellow'
    } else {
       txtEmail.innerHTML = 'E-mail válido'
       txtEmail.style.color = 'green'
@@ -50,7 +50,7 @@ function validaAssunto() {
 
    if (assunto.value.length >= 100) {
       txtAssunto.innerHTML = 'Texto é muito grande, digite no máximo 100 caracteres'
-      txtAssunto.style.color = 'red'
+      txtAssunto.style.color = 'yellow'
       txtAssunto.style.display = 'block'
    } else {
       txtAssunto.style.display = 'none'
@@ -67,8 +67,8 @@ function enviar() {
 }
 
 function mapaZoom() {
-   mapa.style.width = '800px'
-   mapa.style.height = '600px'
+   mapa.style.width = '600px'
+   mapa.style.height = '400px'
 }
 
 function mapaNormal() {
